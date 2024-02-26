@@ -1,0 +1,1 @@
+export 'locators.dart';
