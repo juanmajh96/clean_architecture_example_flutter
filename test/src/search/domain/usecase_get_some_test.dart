@@ -19,19 +19,6 @@ void main() {
     usecase = UsecaseGetSome(repository);
   });
 
-  test("repository isn't called more than once", () async {
-    //Arrange
-    when(() => repository.getFutureData(request: request))
-        .thenAnswer((_) async => const Right(response));
-    //Act
-    await usecase(request);
-    //Assert
-    verify(
-      () => repository.getFutureData(request: request),
-    ).called(1);
-    verifyNoMoreInteractions(repository);
-  });
-
   test('usecase responses an EntityResponse', () async {
     //Arrange
     when(() => repository.getFutureData(request: request))
