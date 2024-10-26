@@ -1,4 +1,5 @@
 import 'package:automatitation/core/core.dart';
+import 'package:automatitation/src/search/domain/domain.dart';
 import 'package:automatitation/src/search/screen/blocs/blocs.dart';
 import 'package:automatitation/src/search/screen/view_model.dart';
 import 'package:flutter/material.dart';

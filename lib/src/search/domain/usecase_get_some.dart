@@ -3,6 +3,8 @@
 import 'package:automatitation/core/core.dart';
 import 'package:automatitation/src/search/domain/domain.dart';
 
+typedef FunctionalUsecaseSome = UsecaseSome<EntityResponse, EntityRequest>;
+
 sealed class UsecaseSome<EntityResponse, EntityRequest> {
   FunctionalFuture<EntityResponse> call(EntityRequest params);
 }

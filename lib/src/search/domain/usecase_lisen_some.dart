@@ -3,6 +3,8 @@
 import 'package:automatitation/core/core.dart';
 import 'package:automatitation/src/search/domain/domain.dart';
 
+typedef FunctionalUsecaseStreamSome = UsecaseStreamSome<EntityResponse, EntityRequest>;
+
 sealed class UsecaseStreamSome<EntityResponse, EntityRequest> {
   FunctionalStream<EntityResponse> call(EntityRequest params);
 }
